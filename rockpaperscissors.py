@@ -105,12 +105,14 @@ canvas.create_image(500, 400, anchor=tkinter.NW, image=selection)
 
 # Without Lambda it just runs the function and draws the image. WITH lambda, it waits for the click
 rock_button = tkinter.Button(root, text="Rock", command=lambda:game_function(1))
-paper_button = tkinter.Button(root, text="Paper", command=lambda:game_function(2))
-scissor_button = tkinter.Button(root, text="Scissor", command=lambda:game_function(3))
-
 rock_button.place(x=35, y=487)
+
+paper_button = tkinter.Button(root, text="Paper", command=lambda:game_function(2))
 paper_button.place(x=128, y=487)
+
+scissor_button = tkinter.Button(root, text="Scissor", command=lambda:game_function(3))
 scissor_button.place(x=220, y=487)
+
 
 clear_b = tkinter.Button(root, text='CLEAR', font=('Times', 10, 'bold'),
                  width=10, command=clear).place(x=370, y=28)
