@@ -116,21 +116,6 @@ scissor_button.place(x=220, y=487)
 
 clear_b = tkinter.Button(root, text='CLEAR', font=('Times', 10, 'bold'),
                  width=10, command=clear).place(x=370, y=28)
-# """ Part 2: Game Implementation"""
-# def game_function(player_choice):
-#     values = [1,2,3]
-#     computer_choice = random.choice(values)
-#     player_choice = int(input("enter rock[1], paper[2], scissors[3]: "))
-#     if player_choice == 1 and computer_choice == 2:
-#         canvas.create_image(0,100, anchor=tkinter.NW, image=rock_p)
-#         canvas.create_image(800,100, anchor=tkinter.NE, image=paper_c)
-#     elif player_choice == 2 and computer_choice == 3:
-#         canvas.create_image(0,100, anchor=tkinter.NW, image=paper_p)
-#         canvas.create_image(800,100, anchor=tkinter.NE, image=scissor_c)
-#     elif player_choice == 3 and computer_choice == 1:
-#         canvas.create_image(0,100, anchor=tkinter.NW, image=scissor_p)
-#         canvas.create_image(800,100, anchor=tkinter.NE, image=rock_c)
-
 
 root.mainloop()
 
